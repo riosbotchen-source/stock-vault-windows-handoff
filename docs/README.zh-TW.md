@@ -48,6 +48,12 @@
 - 後續如有需要，可以再補充 macOS 版本相關內容
 - 若要擴充，建議同步補上建置、簽章與平台差異說明
 
+更細的結構預留請參考：
+
+- [平台總覽](./platforms/README.md)
+- [Windows 頁面](./platforms/windows.md)
+- [macOS 頁面](./platforms/macos.md)
+
 ## 協作建議
 
 如果之後要補齊 macOS 版本，建議同時整理：

@@ -48,6 +48,12 @@ It currently includes:
 - can be prepared and provided later if needed
 - should ideally be accompanied by build, signing, and platform-difference documentation
 
+Reserved platform structure:
+
+- [Platform Guide](./platforms/README.md)
+- [Windows Page](./platforms/windows.md)
+- [macOS Page](./platforms/macos.md)
+
 ## Collaboration Notes
 
 If macOS support is added later, it is recommended to also prepare:

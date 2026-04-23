@@ -1,8 +1,16 @@
 # 股市亨通 (Stock Vault)
 
+![Stock Vault banner](./docs/assets/banner.svg)
+
 Windows-first open-source public handoff for Stock Vault.
 
 [中文說明](./docs/README.zh-TW.md) | [English Guide](./docs/README.en.md)
+
+![Windows](https://img.shields.io/badge/platform-Windows-0F766E?style=for-the-badge)
+![macOS later](https://img.shields.io/badge/macOS-later-1D4ED8?style=for-the-badge)
+![MIT](https://img.shields.io/badge/license-MIT-F59E0B?style=for-the-badge)
+
+> A public-facing Stock Vault handoff repo with Windows availability now and room for future macOS expansion.
 
 ## Overview
 
@@ -32,6 +40,8 @@ This repository is designed for:
 - representative Tauri / Rust core files
 - selected test files
 - bilingual documentation pages
+- repository-ready community standards
+- future-friendly platform documentation layout
 
 ## Repository Scope
 
@@ -63,6 +73,10 @@ The current public package includes:
 
 - [中文說明](./docs/README.zh-TW.md)
 - [English Guide](./docs/README.en.md)
+- [Platform Guide](./docs/platforms/README.md)
+- [Contributing](./CONTRIBUTING.md)
+- [Security](./SECURITY.md)
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
 - [License](./LICENSE)
 
 ## License
