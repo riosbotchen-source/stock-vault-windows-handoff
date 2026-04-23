@@ -1,5 +1,5 @@
-name: Bug report
-description: Report a bug in the public handoff materials or Windows-facing repository content.
+name: Bug report / 錯誤回報
+description: Report a bug in the public handoff materials or Windows-facing repository content. / 回報公開交接內容或 Windows 對外資訊中的問題。
 title: "[Bug] "
 labels:
   - bug
@@ -8,65 +8,71 @@ body:
     attributes:
       value: |
         Thanks for taking the time to report a problem.
+        感謝你花時間回報問題。
 
         This repository is a Windows-first public handoff package. Please keep reports focused on the public materials in this repo unless you are clearly requesting future platform support.
+        這個 repository 目前是以 Windows 為主的公開交接包；除非你是在明確提出未來平台需求，否則請盡量聚焦在目前 repo 內的公開內容。
   - type: textarea
     id: summary
     attributes:
-      label: Summary
-      description: What is the problem?
-      placeholder: A short summary of the issue.
+      label: Summary / 問題摘要
+      description: What is the problem? / 這個問題是什麼？
+      placeholder: A short summary of the issue. / 請簡短描述問題。
     validations:
       required: true
   - type: dropdown
     id: area
     attributes:
-      label: Area
+      label: Area / 問題區域
       options:
-        - README or documentation
-        - Windows-related messaging
-        - Representative source files
-        - Repository metadata
-        - Other public handoff content
+        - README or documentation / README 或文件
+        - Windows-related messaging / Windows 相關對外說明
+        - Representative source files / 代表性原始碼檔案
+        - Repository metadata / Repo 資訊設定
+        - Other public handoff content / 其他公開交接內容
     validations:
       required: true
   - type: dropdown
     id: platform
     attributes:
-      label: Platform context
+      label: Platform context / 平台情境
       options:
         - Windows
-        - Docs only
-        - GitHub repository page
-        - macOS-related note
-        - Other
+        - Docs only / 文件內容
+        - GitHub repository page / GitHub 頁面
+        - macOS-related note / macOS 相關註記
+        - Other / 其他
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Expected behavior
-      placeholder: What did you expect to happen?
+      label: Expected behavior / 預期結果
+      placeholder: What did you expect to happen? / 你原本預期會發生什麼？
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
-      label: Actual behavior
-      placeholder: What happened instead?
+      label: Actual behavior / 實際結果
+      placeholder: What happened instead? / 實際上發生了什麼？
     validations:
       required: true
   - type: textarea
     id: repro
     attributes:
-      label: Steps to reproduce
-      description: If applicable, list the exact steps.
+      label: Steps to reproduce / 重現步驟
+      description: If applicable, list the exact steps. / 如果可以，請列出完整重現步驟。
       placeholder: |
         1. Go to ...
         2. Open ...
         3. See issue ...
+
+        1. 前往 ...
+        2. 開啟 ...
+        3. 看到問題 ...
   - type: textarea
     id: notes
     attributes:
-      label: Additional notes
-      description: Screenshots, file paths, or other context.
+      label: Additional notes / 補充資訊
+      description: Screenshots, file paths, or other context. / 可補充截圖、檔案路徑或其他背景資訊。

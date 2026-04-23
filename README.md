@@ -121,6 +121,7 @@ Instead, it is a curated public package that currently includes:
 - [中文說明](./docs/README.zh-TW.md)
 - [English Guide](./docs/README.en.md)
 - [Platform Guide](./docs/platforms/README.md)
+- [Release Templates](./docs/releases/README.md)
 - [Contributing](./CONTRIBUTING.md)
 - [Security](./SECURITY.md)
 - [Code of Conduct](./CODE_OF_CONDUCT.md)

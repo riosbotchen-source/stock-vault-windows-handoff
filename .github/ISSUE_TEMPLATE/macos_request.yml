@@ -1,5 +1,5 @@
-name: macOS request
-description: Request future macOS materials or track demand for a macOS version.
+name: macOS request / macOS 需求登記
+description: Request future macOS materials or track demand for a macOS version. / 提出未來 macOS 材料需求，或登記對 macOS 版本的需求。
 title: "[macOS] "
 labels:
   - macos
@@ -9,39 +9,47 @@ body:
     attributes:
       value: |
         macOS materials are not included in this public package yet.
+        這份公開包目前尚未包含 macOS 材料。
 
         Use this form if you want to signal demand, describe a macOS use case, or clarify what kind of future support would be most helpful.
+        如果你想表達需求、說明 macOS 使用情境，或補充你最希望的後續支援型態，請使用這份表單。
   - type: textarea
     id: use_case
     attributes:
-      label: macOS use case
-      placeholder: Describe how you would use a macOS version.
+      label: macOS use case / macOS 使用情境
+      placeholder: Describe how you would use a macOS version. / 請描述你會如何使用 macOS 版本。
     validations:
       required: true
   - type: textarea
     id: requested_scope
     attributes:
-      label: Requested scope
+      label: Requested scope / 希望提供的範圍
       placeholder: |
         Example:
         - documentation only
         - build instructions
         - packaging notes
         - full macOS handoff materials
+
+        範例：
+        - 僅文件
+        - 建置說明
+        - 打包註記
+        - 完整 macOS 交接材料
     validations:
       required: true
   - type: dropdown
     id: urgency
     attributes:
-      label: Priority
+      label: Priority / 優先程度
       options:
-        - Nice to have
-        - Useful soon
-        - Important for active work
+        - Nice to have / 有最好
+        - Useful soon / 近期有幫助
+        - Important for active work / 對目前工作很重要
     validations:
       required: true
   - type: textarea
     id: notes
     attributes:
-      label: Additional context
-      placeholder: Anything else that would help define the macOS request.
+      label: Additional context / 補充說明
+      placeholder: Anything else that would help define the macOS request. / 任何有助於界定 macOS 需求的資訊都可以補充。

@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Read the public repository overview
+  - name: Read the public repository overview / 先看 repo 總覽
     url: https://github.com/riosbotchen-source/stock-vault-windows-handoff/blob/main/README.md
-    about: Review the repository scope and current Windows-first positioning before opening an issue.
-  - name: Read the macOS note
+    about: Review the repository scope and current Windows-first positioning before opening an issue. / 開 issue 前，先確認 repo 範圍與目前以 Windows 為主的定位。
+  - name: Read the macOS note / 先看 macOS 說明
     url: https://github.com/riosbotchen-source/stock-vault-windows-handoff/blob/main/docs/platforms/macos.md
-    about: macOS materials are planned for later and are not fully included yet.
+    about: macOS materials are planned for later and are not fully included yet. / macOS 材料預計後續補上，目前尚未完整提供。

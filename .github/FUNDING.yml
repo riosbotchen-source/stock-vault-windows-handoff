@@ -1,8 +1,11 @@
-# Funding links can be added later when an official donation or sponsorship
-# destination is ready for this repository.
+# Official funding is not enabled for this repository yet.
+# 此專案目前尚未啟用正式的贊助或捐助連結。
 #
-# Supported examples:
-# github: [your-github-username]
-# custom: ["https://example.com/support"]
+# When a verified funding destination is ready, replace one of the
+# examples below with the official value.
+# 當後續有正式且可公開的贊助入口時，再用下列格式替換即可。
+#
+# github: [verified-github-sponsors-username]
+# custom: ["https://verified.example.com/support"]
 
 custom: []

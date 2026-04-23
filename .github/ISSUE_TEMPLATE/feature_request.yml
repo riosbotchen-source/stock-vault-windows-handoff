@@ -1,5 +1,5 @@
-name: Feature request
-description: Suggest an improvement for the public repository, documentation, or supported materials.
+name: Feature request / 功能建議
+description: Suggest an improvement for the public repository, documentation, or supported materials. / 提出公開 repo、文件或現有材料的改進建議。
 title: "[Feature] "
 labels:
   - enhancement
@@ -8,48 +8,50 @@ body:
     attributes:
       value: |
         Thanks for sharing an idea.
+        感謝你分享想法。
 
         Please keep in mind that this repository is currently a Windows-first public handoff package.
+        也請留意，這個 repository 目前是以 Windows 為主的公開交接包。
   - type: textarea
     id: proposal
     attributes:
-      label: Proposed improvement
-      placeholder: Describe the feature or improvement you want to see.
+      label: Proposed improvement / 建議內容
+      placeholder: Describe the feature or improvement you want to see. / 請描述你希望加入的功能或改進。
     validations:
       required: true
   - type: textarea
     id: problem
     attributes:
-      label: Problem it solves
-      placeholder: What problem would this improvement solve?
+      label: Problem it solves / 想解決的問題
+      placeholder: What problem would this improvement solve? / 這個改進預計解決什麼問題？
     validations:
       required: true
   - type: dropdown
     id: scope
     attributes:
-      label: Request scope
+      label: Request scope / 需求範圍
       options:
-        - Documentation
-        - Repository organization
-        - Windows-related material
-        - macOS preparation
-        - Public presentation or branding
-        - Other
+        - Documentation / 文件
+        - Repository organization / Repo 結構
+        - Windows-related material / Windows 相關材料
+        - macOS preparation / macOS 預備內容
+        - Public presentation or branding / 對外呈現或品牌整理
+        - Other / 其他
     validations:
       required: true
   - type: dropdown
     id: platform
     attributes:
-      label: Platform target
+      label: Platform target / 目標平台
       options:
         - Windows
         - macOS
-        - Both
-        - Repository only
+        - Both / 兩者
+        - Repository only / 僅 repo
     validations:
       required: true
   - type: textarea
     id: impact
     attributes:
-      label: Why this matters
-      placeholder: Explain why this would be useful.
+      label: Why this matters / 為什麼重要
+      placeholder: Explain why this would be useful. / 請說明這個改進的價值。
