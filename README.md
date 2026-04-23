@@ -16,7 +16,6 @@
 
 - 授權檔
 - 專案說明
-- Windows portable GitHub Actions workflow
 - 部分測試檔
 - 代表性的 Tauri / Rust 核心檔案
 
@@ -32,11 +31,9 @@
 
 ## GitHub Actions
 
-repo 內包含 Windows portable build workflow：
+這份公開 repo 目前**沒有一起放出 GitHub Actions workflow 檔**。
 
-- `.github/workflows/build-windows-portable.yml`
-
-如果後續補齊完整專案檔案，就可以延續這個 workflow 做 Windows 版建置與發佈。
+如果後續需要補上 Windows 自動建置流程，可以再另外提供對應的 workflow 設定。
 
 ## 後續如果要補 Mac 版本
 
