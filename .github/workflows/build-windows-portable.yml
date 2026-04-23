@@ -1,0 +1,112 @@
+name: Build Windows Portable
+
+# 觸發時機:
+# - push 到 main / master 分支 → 自動 build
+# - push 版本 tag (v*) → build 並附到 GitHub Release
+# - 手動點 "Run workflow" → 隨時可以跑
+on:
+  push:
+    branches: [main, master]
+    tags: ["v*"]
+  workflow_dispatch:
+
+jobs:
+  build-windows-portable:
+    name: Build 股市亨通 Windows Portable
+    runs-on: windows-latest
+    # 如果 build 卡住不會無限跑,40 分鐘是很寬鬆的上限
+    timeout-minutes: 40
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      # windows-latest runner 預設就有 Rust + MSVC,這一步只是確保 stable toolchain + 指定 target
+      - name: Setup Rust stable (MSVC)
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: x86_64-pc-windows-msvc
+
+      # 把 cargo registry / src-tauri/target 快取起來,第二次之後會快很多
+      - name: Cache Cargo build
+        uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri -> target
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Handoff sanity check (阻擋 History DB / Forecast 被誤放回來)
+        run: npm run handoff:check:windows
+
+      # 注意: 直接呼叫 tauri CLI 並加 --no-bundle
+      # - 專案原本的 `npm run tauri:build:windows` 會連 NSIS / MSI 一起打包,
+      #   windows runner 上 WiX 不一定齊全,而且綠色版根本不需要安裝檔,
+      #   --no-bundle 只輸出 raw exe,快很多。
+      # - 若想要同時產出安裝檔,把這行換成:
+      #     run: npm run tauri:build:windows
+      - name: Build Tauri Windows exe (no bundle)
+        run: npx tauri build --config src-tauri/tauri.windows.conf.json --no-bundle
+
+      # 明確把 exe 路徑傳進 prep 腳本,避免它去找 mac 交叉編譯用的路徑
+      - name: Prepare portable folder structure
+        shell: pwsh
+        run: |
+          $exe = "src-tauri\target\release\stock-vault.exe"
+          if (-not (Test-Path $exe)) {
+            Write-Host "找不到預期的 exe,列出 release 目錄協助除錯:"
+            Get-ChildItem -Recurse "src-tauri\target\release" -ErrorAction SilentlyContinue |
+              Select-Object FullName, Length | Format-Table -AutoSize
+            throw "Build output missing: $exe"
+          }
+          node scripts/prepare-windows-portable.mjs $exe
+
+      # 用 PowerShell 原生方式壓 zip,不依賴 unix 的 zip 指令
+      - name: Zip portable folder
+        shell: pwsh
+        run: |
+          $src = "release\windows-portable"
+          $dst = "release\stock-vault-windows-portable.zip"
+          if (Test-Path $dst) { Remove-Item $dst -Force }
+          Compress-Archive -Path "$src\*" -DestinationPath $dst -CompressionLevel Optimal
+          Write-Host "已建立: $dst"
+          Get-Item $dst | Select-Object FullName, @{N="MB";E={[math]::Round($_.Length/1MB,2)}}
+
+      - name: Show portable folder tree (debug)
+        shell: pwsh
+        run: |
+          Get-ChildItem -Recurse "release\windows-portable" |
+            Select-Object FullName, Length | Format-Table -AutoSize
+
+      # 上傳壓好的 zip,名字用純英文避免部分瀏覽器下載時編碼出錯
+      - name: Upload portable zip artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: stock-vault-windows-portable-zip
+          path: release/stock-vault-windows-portable.zip
+          if-no-files-found: error
+          retention-days: 14
+
+      # 額外再上傳「未壓縮的資料夾」給想直接看內容的人
+      - name: Upload portable folder artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: stock-vault-windows-portable-folder
+          path: release/windows-portable/**
+          if-no-files-found: error
+          retention-days: 14
+
+      # 當你 push 的是 vX.Y.Z 之類的 tag,自動建 GitHub Release 並附上 zip
+      - name: Attach zip to GitHub Release (on tag push)
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: release/stock-vault-windows-portable.zip
+          fail_on_unmatched_files: true
+          generate_release_notes: true
