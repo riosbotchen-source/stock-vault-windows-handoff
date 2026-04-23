@@ -1,73 +1,89 @@
-# 股市亨通 (Stock Vault)
+<p align="center">
+  <img src="./docs/assets/banner.svg" alt="Stock Vault banner" width="100%" />
+</p>
 
-![Stock Vault banner](./docs/assets/banner.svg)
+<h1 align="center">股市亨通 (Stock Vault)</h1>
 
-Windows-first open-source public handoff for Stock Vault.
+<p align="center"><strong>Windows-first open-source public handoff for Stock Vault.</strong></p>
 
-[中文說明](./docs/README.zh-TW.md) | [English Guide](./docs/README.en.md)
+<p align="center">
+  A clean public-facing repository for project presentation, Windows-oriented collaboration, and future macOS expansion planning.
+</p>
 
-![Windows](https://img.shields.io/badge/platform-Windows-0F766E?style=for-the-badge)
-![macOS later](https://img.shields.io/badge/macOS-later-1D4ED8?style=for-the-badge)
-![MIT](https://img.shields.io/badge/license-MIT-F59E0B?style=for-the-badge)
+<p align="center">
+  <a href="./docs/README.zh-TW.md">中文說明</a> ·
+  <a href="./docs/README.en.md">English Guide</a> ·
+  <a href="./docs/platforms/README.md">Platform Guide</a>
+</p>
 
-> A public-facing Stock Vault handoff repo with Windows availability now and room for future macOS expansion.
+<p align="center">
+  <img src="https://img.shields.io/badge/platform-Windows-0F766E?style=for-the-badge" alt="Windows" />
+  <img src="https://img.shields.io/badge/macOS-later-1D4ED8?style=for-the-badge" alt="macOS later" />
+  <img src="https://img.shields.io/badge/license-MIT-F59E0B?style=for-the-badge" alt="MIT license" />
+</p>
 
-## Overview
+## Product Snapshot
 
-Stock Vault is a desktop-oriented stock and portfolio project with a Windows-first public handoff package.
+Stock Vault is presented here as a curated public handoff package.
 
-This repository is designed for:
+This repository is meant to feel like a reliable public front door:
 
-- public project presentation
-- Windows version handoff
-- open-source sharing
-- future collaboration and platform expansion
+- clear enough for external readers
+- honest about current scope
+- structured for future collaboration
+- ready to expand when macOS materials are introduced later
 
-## Current Status
+## Availability
 
-| Item | Status |
+| Area | Current state |
 | --- | --- |
-| Open source | Yes |
-| Windows version | Available |
-| macOS version | Not included in this public package |
-| Future macOS support | Can be provided later if needed |
-| License | MIT |
+| Open source | Public |
+| Windows version | Available now |
+| macOS version | Not included in this package yet |
+| Future macOS support | Can be added later if needed |
+| Repository focus | Windows-first public handoff |
 
-## Highlights
+## Why This Repository Exists
 
-- product-style public landing page
-- Windows-focused repository positioning
-- representative Tauri / Rust core files
-- selected test files
-- bilingual documentation pages
-- repository-ready community standards
-- future-friendly platform documentation layout
+This repository is designed to support three practical goals:
 
-## Repository Scope
+1. present Stock Vault clearly in public
+2. provide a Windows-first handoff package that others can review and reference
+3. keep the documentation structure ready for future macOS expansion
 
-This is a curated public handoff repository.
+## What You Can Expect
 
-It is not presented as the full internal or cross-platform source tree.
+- polished landing page and bilingual documentation
+- Windows-first positioning that is easy to understand
+- representative Tauri / Rust implementation files
+- selected tests and public-facing materials
+- contribution, security, and conduct guidance for collaborators
 
-The current public package includes:
+## Scope
+
+This is not presented as the complete internal or cross-platform source tree.
+
+Instead, it is a curated public package that currently includes:
 
 - public documentation
 - license information
-- selected tests
+- selected test coverage
 - representative implementation files
+- collaboration and repository standards
 
-## Platform Availability
+## Platform Direction
 
 ### Windows
 
-- currently available
-- primary public reference platform
-- suitable for current external presentation
+- the current primary public platform
+- the platform external readers should treat as the reference point
+- the basis for current repository messaging
 
 ### macOS
 
-- not included in this public package yet
-- can be prepared and provided later if needed
+- not bundled into this public package yet
+- intentionally reserved as a future expansion track
+- can be documented and added later without restructuring the repository
 
 ## Quick Links
 

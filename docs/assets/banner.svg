@@ -1,61 +1,69 @@
 <svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="640" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0F172A"/>
-      <stop offset="0.55" stop-color="#102A43"/>
+    <linearGradient id="bg" x1="80" y1="40" x2="1200" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="0.52" stop-color="#13324A"/>
       <stop offset="1" stop-color="#1F6F8B"/>
     </linearGradient>
-    <linearGradient id="card" x1="830" y1="110" x2="1130" y2="430" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F8FAFC" stop-opacity="0.95"/>
-      <stop offset="1" stop-color="#D9F3FF" stop-opacity="0.85"/>
+    <linearGradient id="glass" x1="792" y1="96" x2="1128" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#DDF6FF" stop-opacity="0.82"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="accent" x1="880" y1="244" x2="1082" y2="192" gradientUnits="userSpaceOnUse">
       <stop stop-color="#F59E0B"/>
       <stop offset="1" stop-color="#F97316"/>
     </linearGradient>
-    <filter id="shadow" x="780" y="70" width="390" height="410" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#02111B" flood-opacity="0.32"/>
+    <filter id="shadow" x="760" y="78" width="402" height="392" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="20" flood-color="#020B15" flood-opacity="0.35"/>
     </filter>
   </defs>
 
-  <rect width="1280" height="640" fill="url(#bg)"/>
-  <circle cx="1038" cy="112" r="215" fill="#38BDF8" fill-opacity="0.09"/>
-  <circle cx="1180" cy="544" r="220" fill="#F59E0B" fill-opacity="0.08"/>
-  <circle cx="202" cy="540" r="170" fill="#34D399" fill-opacity="0.08"/>
+  <rect width="1280" height="640" rx="28" fill="url(#bg)"/>
+  <circle cx="1134" cy="102" r="182" fill="#38BDF8" fill-opacity="0.12"/>
+  <circle cx="1134" cy="102" r="106" fill="#38BDF8" fill-opacity="0.08"/>
+  <circle cx="1188" cy="552" r="236" fill="#F59E0B" fill-opacity="0.08"/>
+  <circle cx="164" cy="550" r="148" fill="#34D399" fill-opacity="0.08"/>
 
-  <rect x="72" y="86" width="174" height="34" rx="17" fill="#E0FBFC" fill-opacity="0.14"/>
-  <text x="95" y="108" fill="#E0FBFC" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700">WINDOWS-FIRST PUBLIC HANDOFF</text>
+  <path d="M0 560C168 498 276 522 388 558C500 594 624 620 824 568C980 528 1090 474 1280 518V640H0V560Z" fill="#FFFFFF" fill-opacity="0.04"/>
 
-  <text x="72" y="210" fill="#F8FAFC" font-family="'Segoe UI', Arial, sans-serif" font-size="72" font-weight="800">Stock Vault</text>
-  <text x="72" y="268" fill="#D7F9FF" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600">股市亨通公開交接版本</text>
-  <text x="72" y="334" fill="#D6EAF8" font-family="'Segoe UI', Arial, sans-serif" font-size="24">Open-source presentation repo with Windows availability now</text>
-  <text x="72" y="372" fill="#D6EAF8" font-family="'Segoe UI', Arial, sans-serif" font-size="24">and macOS materials planned for a later release.</text>
+  <rect x="78" y="78" width="202" height="36" rx="18" fill="#D7F9FF" fill-opacity="0.14"/>
+  <text x="102" y="101" fill="#E8FCFF" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700">WINDOWS-FIRST PUBLIC HANDOFF</text>
 
-  <rect x="72" y="430" width="238" height="58" rx="18" fill="#F8FAFC"/>
-  <text x="108" y="466" fill="#0F172A" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700">Windows available</text>
+  <text x="78" y="208" fill="#F8FAFC" font-family="'Segoe UI', Arial, sans-serif" font-size="72" font-weight="800">Stock Vault</text>
+  <text x="78" y="266" fill="#D6F4FF" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="600">股市亨通公開展示與交接版本</text>
 
-  <rect x="328" y="430" width="248" height="58" rx="18" fill="#FFFFFF" fill-opacity="0.09" stroke="#D8F3FF" stroke-opacity="0.28"/>
-  <text x="365" y="466" fill="#F8FAFC" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700">macOS later</text>
+  <text x="78" y="334" fill="#D6EAF8" font-family="'Segoe UI', Arial, sans-serif" font-size="24">A clear public-facing repository for Windows availability now,</text>
+  <text x="78" y="372" fill="#D6EAF8" font-family="'Segoe UI', Arial, sans-serif" font-size="24">with documentation structure ready for future macOS expansion.</text>
+
+  <rect x="78" y="434" width="234" height="60" rx="18" fill="#F8FAFC"/>
+  <text x="112" y="471" fill="#0F172A" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700">Windows available</text>
+
+  <rect x="330" y="434" width="230" height="60" rx="18" fill="#FFFFFF" fill-opacity="0.10" stroke="#D8F3FF" stroke-opacity="0.30"/>
+  <text x="367" y="471" fill="#F8FAFC" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700">macOS later</text>
 
   <g filter="url(#shadow)">
-    <rect x="820" y="110" width="310" height="330" rx="28" fill="url(#card)"/>
+    <rect x="804" y="96" width="314" height="338" rx="30" fill="url(#glass)"/>
   </g>
 
-  <rect x="852" y="146" width="120" height="18" rx="9" fill="#0F172A" fill-opacity="0.08"/>
-  <rect x="852" y="182" width="246" height="96" rx="20" fill="#0F172A" fill-opacity="0.05"/>
-  <path d="M876 246C904 222 924 218 950 230C973 241 987 238 1010 212C1030 191 1050 190 1078 208" stroke="url(#accent)" stroke-width="10" stroke-linecap="round"/>
-  <circle cx="876" cy="246" r="9" fill="#F59E0B"/>
-  <circle cx="950" cy="230" r="9" fill="#F59E0B"/>
-  <circle cx="1010" cy="212" r="9" fill="#F59E0B"/>
-  <circle cx="1078" cy="208" r="9" fill="#F59E0B"/>
+  <rect x="836" y="130" width="134" height="18" rx="9" fill="#0F172A" fill-opacity="0.08"/>
+  <rect x="836" y="166" width="250" height="112" rx="20" fill="#0F172A" fill-opacity="0.05"/>
 
-  <rect x="852" y="308" width="246" height="18" rx="9" fill="#0F172A" fill-opacity="0.08"/>
-  <rect x="852" y="338" width="214" height="16" rx="8" fill="#0F172A" fill-opacity="0.06"/>
-  <rect x="852" y="364" width="172" height="16" rx="8" fill="#0F172A" fill-opacity="0.06"/>
+  <path d="M860 246C891 216 915 208 945 220C973 232 996 227 1026 196C1046 176 1070 176 1098 194" stroke="url(#accent)" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="860" cy="246" r="9" fill="#F59E0B"/>
+  <circle cx="945" cy="220" r="9" fill="#F59E0B"/>
+  <circle cx="1026" cy="196" r="9" fill="#F59E0B"/>
+  <circle cx="1098" cy="194" r="9" fill="#F59E0B"/>
 
-  <rect x="852" y="396" width="86" height="18" rx="9" fill="#10B981" fill-opacity="0.22"/>
-  <text x="870" y="410" fill="#0F766E" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700">OPEN SOURCE</text>
+  <rect x="836" y="306" width="250" height="16" rx="8" fill="#0F172A" fill-opacity="0.08"/>
+  <rect x="836" y="336" width="214" height="15" rx="7.5" fill="#0F172A" fill-opacity="0.06"/>
+  <rect x="836" y="362" width="176" height="15" rx="7.5" fill="#0F172A" fill-opacity="0.06"/>
 
-  <rect x="952" y="396" width="70" height="18" rx="9" fill="#3B82F6" fill-opacity="0.18"/>
-  <text x="968" y="410" fill="#1D4ED8" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700">WINDOWS</text>
+  <rect x="836" y="392" width="94" height="20" rx="10" fill="#10B981" fill-opacity="0.22"/>
+  <text x="854" y="406" fill="#0F766E" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="800">OPEN SOURCE</text>
+
+  <rect x="944" y="392" width="78" height="20" rx="10" fill="#3B82F6" fill-opacity="0.18"/>
+  <text x="960" y="406" fill="#1D4ED8" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="800">WINDOWS</text>
+
+  <rect x="1034" y="392" width="62" height="20" rx="10" fill="#F59E0B" fill-opacity="0.20"/>
+  <text x="1048" y="406" fill="#B45309" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="800">LATER</text>
 </svg>
