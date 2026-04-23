@@ -1,8 +1,12 @@
-# Stock Vault Public Release
+# Stock Vault Public Release v1.0.0
 
 台灣股市專屬的本地桌面記帳工具。直接串接 TWSE / TPEX、支援 TDCC 對帳單匯入、FIFO 精確配對。資料存在自己電腦，不上雲。Windows 綠色版免安裝。
 
 Stock Vault is a Taiwan-stock-market-focused local desktop bookkeeping tool with direct TWSE / TPEX connectivity, TDCC statement import support, precise FIFO matching, local-only data storage, and a no-install Windows portable edition.
+
+目前這份公開 handoff 對應的 App 版本為 `v1.0.0`。
+
+This public handoff currently maps to app version `v1.0.0`.
 
 ## 這次發佈的重點 / Release Highlights
 

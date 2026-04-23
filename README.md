@@ -23,6 +23,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/platform-Windows-0F766E?style=for-the-badge" alt="Windows" />
   <img src="https://img.shields.io/badge/macOS-later-1D4ED8?style=for-the-badge" alt="macOS later" />
+  <img src="https://img.shields.io/badge/app-v1.0.0-EF4444?style=for-the-badge" alt="App v1.0.0" />
   <img src="https://img.shields.io/badge/license-MIT-F59E0B?style=for-the-badge" alt="MIT license" />
 </p>
 
@@ -44,6 +45,7 @@ This repository is meant to feel like a reliable public front door:
 | Area | Current state |
 | --- | --- |
 | Open source | Public |
+| Current app version | v1.0.0 |
 | Windows version | Available now |
 | macOS version | Not included in this package yet |
 | Future macOS support | Can be added later if needed |
@@ -54,6 +56,7 @@ This repository is meant to feel like a reliable public front door:
 This repository is currently positioned as a public handoff package.
 
 - Public reference link: [GitHub repository](https://github.com/riosbotchen-source/stock-vault-windows-handoff)
+- Current public app version: `v1.0.0`
 - Future packaged delivery: if downloadable release assets are published later, they should appear under [Releases](https://github.com/riosbotchen-source/stock-vault-windows-handoff/releases)
 - Current expectation: use this repository as the public documentation and handoff entry point
 

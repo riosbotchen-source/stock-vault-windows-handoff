@@ -4,6 +4,8 @@ This repository is a public GitHub handoff package for Stock Vault, positioned a
 
 Stock Vault is a Taiwan-stock-market-focused local desktop bookkeeping tool with direct TWSE / TPEX connectivity, TDCC statement import support, precise FIFO matching, local-only data storage, and a no-install Windows portable edition.
 
+The current public app version referenced by this repository is `v1.0.0`.
+
 [Back to Home](../README.md) | [中文版](./README.zh-TW.md)
 
 ## Project Positioning
@@ -19,6 +21,7 @@ This repository is intended to:
 
 | Item | Status |
 | --- | --- |
+| Current app version | `v1.0.0` |
 | Windows version | Currently available |
 | macOS version | Not included in this public package |
 | Future macOS support | Can be provided later if needed |
