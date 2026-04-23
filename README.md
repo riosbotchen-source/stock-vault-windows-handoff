@@ -1,49 +1,85 @@
 # 股市亨通 (Stock Vault)
 
-公開版 GitHub handoff repo。
+公開版 GitHub handoff repository for Stock Vault.
 
-目前這個公開版本以 **Windows 版** 為主，方便外部查看、保存與後續協作。
+這是一份對外公開的 GitHub 交接版本，主要用於分享目前可公開的 Windows 版相關內容與後續協作資訊。
 
 ## 目前版本狀態
 
-- Windows: 目前可提供與維護
-- macOS: 目前尚未隨此公開包一起提供
-- Mac 版本: 如後續有需要，可以再補提供
+### 中文
 
-## 這個公開 repo 目前包含什麼
+- Windows 版本：目前可提供
+- macOS 版本：目前未隨此公開包提供
+- 後續需求：如有需要，可再提供 macOS 版本相關內容
 
-這份 repo 目前公開的是可分享的 handoff 內容，包含：
+### English
+
+- Windows version: currently available
+- macOS version: not included in this public package at the moment
+- Future support: a macOS version can be provided later if needed
+
+## Repo Scope
+
+### 中文
+
+此 repo 目前公開的是可分享的 handoff 內容，而不是完整跨平台原始碼全集。
+
+目前包含：
 
 - 授權檔
-- 專案說明
-- 部分測試檔
+- 專案對外說明
+- 部分測試檔案
 - 代表性的 Tauri / Rust 核心檔案
 
-這表示它目前是 **Windows 公開交接版本**，不是完整的商業發佈包或完整跨平台原始碼全集。
+### English
 
-## Windows 說明
+This repository currently contains a shareable public handoff package rather than the full cross-platform source tree.
 
-目前對外說明請以 Windows 版本為準。
+It currently includes:
 
-- 使用定位: Windows 桌面版 / portable 流程
-- 公開說明: 目前只有 Windows 版本
-- 後續規劃: 若需要 macOS 版本，可再補上對應內容
+- license information
+- public project documentation
+- selected test files
+- representative Tauri / Rust core files
 
-## GitHub Actions
+## Platform Availability
 
-這份公開 repo 目前**沒有一起放出 GitHub Actions workflow 檔**。
+### 中文
 
-如果後續需要補上 Windows 自動建置流程，可以再另外提供對應的 workflow 設定。
+目前請以 Windows 版本說明為準。
 
-## 後續如果要補 Mac 版本
+- 使用定位：Windows 桌面版相關公開交接內容
+- 對外狀態：目前僅提供 Windows 版本資訊
+- 後續規劃：如需要，可再補充 macOS 版本內容
 
-後續如需提供 macOS 版本，建議一起補上：
+### English
 
-- macOS 專用建置說明
+Please treat the Windows version as the current public reference.
+
+- Current focus: public handoff materials for the Windows desktop version
+- Public availability: Windows only for now
+- Future plan: macOS-related materials can be added later if requested
+
+## Notes For Collaboration
+
+### 中文
+
+如果後續要擴充到 macOS 版本，建議同步補上：
+
+- macOS 建置說明
 - 對應的 Tauri / Xcode 配置
-- Mac 發佈或簽章流程
-- 與 Windows 版差異說明
+- 平台差異說明
+- 發佈與簽章流程
+
+### English
+
+If this project is later expanded to include a macOS version, the following items should ideally be added as well:
+
+- macOS build instructions
+- related Tauri / Xcode configuration
+- platform difference notes
+- release and signing workflow documentation
 
 ## License
 
-本 repo 目前公開內容採用 [MIT](./LICENSE)。
+This repository is released under the [MIT License](./LICENSE).
