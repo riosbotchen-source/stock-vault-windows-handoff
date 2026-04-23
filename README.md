@@ -43,6 +43,37 @@ This repository is meant to feel like a reliable public front door:
 | Future macOS support | Can be added later if needed |
 | Repository focus | Windows-first public handoff |
 
+## Download
+
+This repository is currently positioned as a public handoff package.
+
+- Public reference link: [GitHub repository](https://github.com/riosbotchen-source/stock-vault-windows-handoff)
+- Future packaged delivery: if downloadable release assets are published later, they should appear under [Releases](https://github.com/riosbotchen-source/stock-vault-windows-handoff/releases)
+- Current expectation: use this repository as the public documentation and handoff entry point
+
+## Supported Platforms
+
+### Available now
+
+- Windows
+
+### Planned later
+
+- macOS
+
+### Repository stance
+
+- Windows is the current public platform reference
+- macOS is intentionally marked as a later expansion path
+- platform messaging should remain consistent with that status
+
+## Future Plans
+
+- keep refining the public repository presentation
+- improve Windows-facing handoff clarity
+- collect structured macOS demand through issues
+- add macOS materials later without restructuring the repository
+
 ## Why This Repository Exists
 
 This repository is designed to support three practical goals:
