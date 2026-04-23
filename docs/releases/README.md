@@ -13,6 +13,8 @@ These templates are designed to keep release messaging:
 
 - [Traditional Chinese release template](./RELEASE_TEMPLATE.zh-TW.md)
 - [English release template](./RELEASE_TEMPLATE.en.md)
+- [Initial public handoff draft (Traditional Chinese)](./INITIAL_PUBLIC_HANDOFF.zh-TW.md)
+- [Initial public handoff draft (English)](./INITIAL_PUBLIC_HANDOFF.en.md)
 
 ## Suggested Use
 
@@ -22,3 +24,7 @@ Use these templates when publishing:
 - a documentation refresh worth announcing
 - a Windows-facing release
 - a repository milestone that should mention future macOS availability clearly
+
+## Ready-To-Use Draft
+
+The initial public handoff draft files are prewritten release notes that can be pasted into a future GitHub Release with only small edits if you want to publish a first formal announcement later.
