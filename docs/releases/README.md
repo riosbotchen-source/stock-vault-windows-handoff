@@ -15,6 +15,7 @@ These templates are designed to keep release messaging:
 - [English release template](./RELEASE_TEMPLATE.en.md)
 - [Initial public handoff draft (Traditional Chinese)](./INITIAL_PUBLIC_HANDOFF.zh-TW.md)
 - [Initial public handoff draft (English)](./INITIAL_PUBLIC_HANDOFF.en.md)
+- [Initial public handoff draft (Bilingual)](./INITIAL_PUBLIC_HANDOFF.bilingual.md)
 
 ## Suggested Use
 

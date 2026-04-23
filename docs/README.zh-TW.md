@@ -2,6 +2,8 @@
 
 這是一份對外公開的 GitHub 交接版本，定位為股市亨通的 Windows-first 公開 handoff repo。
 
+台灣股市專屬的本地桌面記帳工具。直接串接 TWSE / TPEX、支援 TDCC 對帳單匯入、FIFO 精確配對。資料存在自己電腦，不上雲。Windows 綠色版免安裝。
+
 [返回首頁](../README.md) | [English Version](./README.en.md)
 
 ## 專案定位

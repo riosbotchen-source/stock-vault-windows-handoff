@@ -11,6 +11,10 @@
 </p>
 
 <p align="center">
+  台灣股市專屬的本地桌面記帳工具。直接串接 TWSE / TPEX、支援 TDCC 對帳單匯入、FIFO 精確配對。資料存在自己電腦，不上雲。Windows 綠色版免安裝。
+</p>
+
+<p align="center">
   <a href="./docs/README.zh-TW.md">中文說明</a> ·
   <a href="./docs/README.en.md">English Guide</a> ·
   <a href="./docs/platforms/README.md">Platform Guide</a>
@@ -25,6 +29,8 @@
 ## Product Snapshot
 
 Stock Vault is presented here as a curated public handoff package.
+
+It is a Taiwan-stock-market-focused local desktop bookkeeping tool with direct TWSE / TPEX connectivity, TDCC statement import support, precise FIFO matching, local-only data storage, and a no-install Windows portable edition.
 
 This repository is meant to feel like a reliable public front door:
 
