@@ -1,0 +1,72 @@
+name: Bug report
+description: Report a bug in the public handoff materials or Windows-facing repository content.
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem.
+
+        This repository is a Windows-first public handoff package. Please keep reports focused on the public materials in this repo unless you are clearly requesting future platform support.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is the problem?
+      placeholder: A short summary of the issue.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - README or documentation
+        - Windows-related messaging
+        - Representative source files
+        - Repository metadata
+        - Other public handoff content
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform context
+      options:
+        - Windows
+        - Docs only
+        - GitHub repository page
+        - macOS-related note
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: What happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: If applicable, list the exact steps.
+      placeholder: |
+        1. Go to ...
+        2. Open ...
+        3. See issue ...
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      description: Screenshots, file paths, or other context.

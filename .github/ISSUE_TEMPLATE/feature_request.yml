@@ -1,0 +1,55 @@
+name: Feature request
+description: Suggest an improvement for the public repository, documentation, or supported materials.
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing an idea.
+
+        Please keep in mind that this repository is currently a Windows-first public handoff package.
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      placeholder: Describe the feature or improvement you want to see.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem it solves
+      placeholder: What problem would this improvement solve?
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Request scope
+      options:
+        - Documentation
+        - Repository organization
+        - Windows-related material
+        - macOS preparation
+        - Public presentation or branding
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform target
+      options:
+        - Windows
+        - macOS
+        - Both
+        - Repository only
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Why this matters
+      placeholder: Explain why this would be useful.

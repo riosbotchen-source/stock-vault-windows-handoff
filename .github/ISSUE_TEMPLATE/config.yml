@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the public repository overview
+    url: https://github.com/riosbotchen-source/stock-vault-windows-handoff/blob/main/README.md
+    about: Review the repository scope and current Windows-first positioning before opening an issue.
+  - name: Read the macOS note
+    url: https://github.com/riosbotchen-source/stock-vault-windows-handoff/blob/main/docs/platforms/macos.md
+    about: macOS materials are planned for later and are not fully included yet.

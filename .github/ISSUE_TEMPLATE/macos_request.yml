@@ -1,0 +1,47 @@
+name: macOS request
+description: Request future macOS materials or track demand for a macOS version.
+title: "[macOS] "
+labels:
+  - macos
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        macOS materials are not included in this public package yet.
+
+        Use this form if you want to signal demand, describe a macOS use case, or clarify what kind of future support would be most helpful.
+  - type: textarea
+    id: use_case
+    attributes:
+      label: macOS use case
+      placeholder: Describe how you would use a macOS version.
+    validations:
+      required: true
+  - type: textarea
+    id: requested_scope
+    attributes:
+      label: Requested scope
+      placeholder: |
+        Example:
+        - documentation only
+        - build instructions
+        - packaging notes
+        - full macOS handoff materials
+    validations:
+      required: true
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Priority
+      options:
+        - Nice to have
+        - Useful soon
+        - Important for active work
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      placeholder: Anything else that would help define the macOS request.
